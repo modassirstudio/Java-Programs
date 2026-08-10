@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">
+                Create your new account
+            </p>
+
+            <form id="signupForm">
+
+                <!-- Name -->
+                <div class="input-group">
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="input-group">
+
+                    <label for="signupEmail">Email</label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                    >
+
+                    <small id="signupEmailError"></small>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <label for="signupPassword">Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Create a password"
+                        >
+
+                        <button
+                            type="button"
+                            id="toggleSignupPassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                    <small id="signupPasswordError"></small>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                        >
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                    <small id="confirmPasswordError"></small>
+
+                </div>
+
+
+                <!-- Terms -->
+                <div class="terms">
+
+                    <label>
+                        <input type="checkbox" id="terms">
+
+                        I agree to the Terms & Conditions
+                    </label>
+
+                    <small id="termsError"></small>
+
+                </div>
+
+
+                <!-- Sign Up Button -->
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+                    Create Account
+                </button>
+
+
+                <p id="signupSuccess"></p>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+
+            <!-- Login Link -->
+            <p class="signup">
+
+                Already have an account?
+
+                <a href="Login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
